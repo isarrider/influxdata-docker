@@ -9,7 +9,7 @@ RUN addgroup -S -g 1000 influxdb && \
     mkdir -p /home/influxdb && \
     chown -R influxdb:influxdb /home/influxdb
 
-# Install the infuxd server
+# Install the influxd server
 ENV INFLUXDB_VERSION 2.6.1
 RUN set -eux && \
     ARCH="$(apk --print-arch)" && \
